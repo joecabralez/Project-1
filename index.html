@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
 	<title>Sports App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
@@ -11,8 +12,9 @@
 <body>
   <div class="container">
 
-  <div class="jumbotron">
-  	<h1>Whos's your favorite team?</h1>
+  <div class="jumbotron" style="text-align: center;">
+  	<h1>Second Screen Sports</h1>
+      <h3>Type in your favorite team/player for social media updates</h3>
   	</div>
 
   	<div class="form-group">
@@ -20,10 +22,19 @@
            <input type="text" class="form-control" id="search-term">
            <input id="search" type="submit" value="Submit">
      </div>
-  	
-
-
-  </div>
+      
+<div class="row">
+  <div class="col-md-3" id="sportsAPI">Sports API
+    <p>Shiznit ipsum tellivizzle sit shizzle my nizzle crocodizzle, consectetizzle adipiscing elit. Nullam the bizzle velizzle, brizzle volutpizzle, daahng dawg gangsta, gravida vizzle, shit. Pellentesque eget doggy. Da bomb erizzle. Stuff izzle dolor dapibus fo tempus sizzle. Maurizzle shiz check out this bizzle go to hizzle.</p>
+    </div>
+  <div class="col-md-6" id="twitter">Twitter
+      <a class="twitter-timeline"  href="https://twitter.com/search?q=sports" data-widget-id="854144243983626240">Tweets about sports</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+  <div class="col-md-3" id="wikipedia">Wikipedia
+    <p>Nizzle metus urna, away izzle, i saw beyonces tizzles and my pizzle went crizzle izzle, sollicitudin at, nulla. Funky fresh pharetra, nisi egestizzle facilisis owned, boom shackalack sure consequizzle go to hizzle, mollizzle fringilla libero mammasay mammasa mamma oo sa izzle purus. Class dizzle taciti fo shizzle izzle litora torquent conubia nostra, da bomb inceptos hymenizzle. Fo shizzle my nizzle cool shiz, scelerisque egizzle, iaculizzle vel, accumsan cool, elizzle. </p>
+    </div>
+</div>
 
 </body>
 </html>
